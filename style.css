@@ -229,9 +229,9 @@
     grid-column: 2 / 3;
 
     display: grid;
-    grid-template-rows: 1fr 10fr;
+    grid-template-rows: 0.7fr 8fr 0.5fr;
     grid-template-columns: 3fr 1fr;
-    gap: 0.5rem;
+    
     
 }
 
@@ -244,10 +244,10 @@
 }
 
 .main-text-top-left {
-    padding-left: 1rem;
+    padding-left: 2rem;
     font-size: 1.5rem;
     font-weight: bold;
-    
+
 }
 
 .main-text-top-right {
@@ -256,7 +256,8 @@
 }
 
 .main-mid-left {
- 
+    grid-row: 2/3;
+
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -265,8 +266,9 @@
 }
 
 .card {
+    
+
     border-left: 8px solid orange;
-    border-radius: 5px;
     width: 90%;
     height: 90%;
     background-color: #fff;
@@ -306,31 +308,52 @@
 }
 
 
-.main-mid-right {  
+.main-mid-right {
+    grid-row: 2 / 3;
+    
     display: grid;
-    grid-template-rows: 6fr 1fr 6fr;
+    grid-template-rows: 6fr 1.2fr 6fr;
     margin-right: 2rem;
+    margin-top: 0.9rem;
 }
 
-.main-mid-right-top { 
+.main-mid-right-top {
+    align-self: center; 
     background-color: #fff;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    margin-top: 1rem; 
+    height: 100%;
+    font-size: 0.9rem;
 }
 
 .main-mid-right-top-item {
     align-self: center;
     justify-self: center;
-    width: 90%;
+    width: 80%;  
 }
+
+.main-mid-right-top-item:nth-child(1) {
+    border-bottom: 1px solid #808080;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.main-mid-right-top-item:nth-child(2) {
+    border-bottom: 1px solid #808080;
+    padding-bottom: 1rem;
+}
+
+.main-mid-right-top-item:nth-child(3) {
+    padding-bottom: 2rem;
+}
+
 
 .main-mid-right-top-heading {
    font-weight: bold;
+   padding-left: 0.5rem;
 }
 
 .main-mid-right-top-text {
-   
+    padding-left: 0.5rem;
 }
 
 .main-mid-right-mid { /* text Trending*/
@@ -341,10 +364,10 @@
 
 .main-mid-right-bottom {
     background-color: #fff;
-    border-radius: 5px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
+    margin-bottom: 0.7rem; 
     
 }
 
@@ -379,7 +402,7 @@
 
 
 
-/* grouping elements with same color together*/
+/* grouping elements with same styling together*/
 .item-text,
 .main-mid-right-top-text,
 .card-text {
@@ -390,4 +413,11 @@
 .header-btn { /* colors are same as in sidebar */
     background-color: #0099ff;;
     color: #fff; 
+}
+
+
+.card,
+.main-mid-right-top,
+.main-mid-right-bottom {
+    border-radius: 5px;
 }
