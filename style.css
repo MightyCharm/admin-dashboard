@@ -3,7 +3,6 @@
     box-sizing: border-box;
 }
 
-
 .container {
     height: 100vh; /* later 100vh */
     display: grid;
@@ -44,6 +43,7 @@
 .dashboard-text {
     justify-self: start;
 }
+
 .sidebar-mid {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
@@ -83,7 +83,7 @@
 
 .sidebar-link:hover {
     /*color: deeppink;*/
-    font-size: 1.7rem;
+    color: #dddcdc;
 }
 
 .header {
@@ -94,8 +94,7 @@
     display: grid;
     grid-template-rows: 1.2fr 2fr;
     grid-template-columns: 1.6fr 1fr;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 .header-top-left {
@@ -109,7 +108,6 @@
     align-items: center;
     justify-items: center;
     gap: 1rem;
-
 }
 
 .header-btnSearch {
@@ -119,7 +117,6 @@
     background-color: #fff;
     border: none;
     justify-self: end; 
- 
 }
 
 .header-input {
@@ -212,8 +209,7 @@
     grid-template-rows: 1fr;
     grid-template-columns: 0.2fr 1fr 1fr 1fr 0.1fr;
     align-items: center;
-    justify-items: center;
-    
+    justify-items: center;   
 }
 
 .header-btn {
@@ -232,11 +228,10 @@
 }
 
 .header-btn:hover {
-    /*background-color: deeppink;*/
-    width: 66%;
-    height: 41%;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
 }
-
 
 .main-content {
     /*background-color: #dcdcdc;*/
@@ -246,9 +241,7 @@
 
     display: grid;
     grid-template-rows: 0.7fr 8fr 0.5fr;
-    grid-template-columns: 3fr 1fr;
-    
-    
+    grid-template-columns: 3fr 1fr;  
 }
 
 .main-content-top {
@@ -340,8 +333,7 @@
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     height: 93%;
-    font-size: 0.9rem;
-    
+    font-size: 0.9rem;   
 }
 
 .main-content-mid-right-top-item {
@@ -363,7 +355,6 @@
 .main-content-mid-right-top-item:nth-child(3) {
     padding-bottom: 2rem;
 }
-
 
 .main-content-mid-right-top-heading {
     font-size: 1.1rem;
@@ -415,19 +406,17 @@
 }
 
 .item-name:hover {
-    font-size: 1.25rem;
+    color: #939393;;
 }
 
 .item-text {
-    color: #605d5d;
+    color: #333333;
 }
 
 .item-img {
     width: 55px;
     border-radius: 50%;
 }
-
-
 
 /* grouping elements with same styling together*/
 .item-text,
@@ -442,7 +431,6 @@
     background-color: #0099ff;;
     color: #fff; 
 }
-
 
 .card,
 .main-content-mid-right-top,
